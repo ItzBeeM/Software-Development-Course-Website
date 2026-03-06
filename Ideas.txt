@@ -1,14 +1,14 @@
 What lessons could be about:
 -development methods(Waterfall, iterative, RAD)
--IDE(Integrated Development Environment)
+IDE(Integrated Development Environment)
 -version control
 -contact with cilient and understending what is needed
 -development cycle(analysis, design, coding, testing, maintenance)
 -programming languages
 
 I think that the one long lesson should be about development methods and development cycle. 
- Talk about diffrent dev methods like waterfall, iterative, RAD, Scrum etc. Their advantages and disadvantages. And how to chose the best method for your project. 
- Talk about steps in the cycle, how diffrent methods change how the dev process works. 
+Talk about diffrent dev methods like waterfall, iterative, RAD, Scrum etc. Their advantages and disadvantages. And how to choose the best method for your project. 
+Talk about steps in the cycle, how diffrent methods change how the dev process works. 
 
 Random ideas. 
 - To make the course more intresting add a theme (getting knowledge to lets say slay a dragon or deafet some evil wizard wich symbolises success in learning). Game-like aproach to try making the learing proces more engaining and unique. 
