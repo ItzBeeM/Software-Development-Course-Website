@@ -248,7 +248,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function loadWizardQuestion() {
             if (currentQuestionIndex >= wizardQuestions.length) return;
-            
+            wizardFeedback.textContent = "";
+            wizardFeedback.className = "feedback-msg";
+
             const qData = wizardQuestions[currentQuestionIndex];
             wizardQuestionText.textContent = qData.q;
             wizardOptionsContainer.innerHTML = "";
