@@ -341,3 +341,52 @@ color: white;
   background-color: var(--deep-purple);
   color: white;
 }
+/* ===== Mobile Improvements ===== */
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+    font-size: 18px; /* większy tekst */
+	overflow-y: auto;
+
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+max-height: 40vh;
+  overflow-y: auto;
+
+  }
+
+
+
+  .nav-links a {
+    padding: 14px;
+    font-size: 18px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 1.8em;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .interactive-btn,
+  .wizard-option-btn,
+  .attack-btn {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .commit-grid {
+    grid-template-columns: repeat(10, 1fr); /* większe kwadraty */
+  }
+}
+
