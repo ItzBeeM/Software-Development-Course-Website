@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const bossFeedback = document.getElementById("lesson4-feedback");
     
     if (attackBtns.length > 0 && bossHpDisplay) {
-        let bossHp = 100;
+        let bossHp = 50;
         
         attackBtns.forEach(btn => {
             btn.addEventListener("click", function() {
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     bossHp += 10; // Healing the boss
                 }
                 
-                if (bossHp > 100) bossHp = 100;
+                if (bossHp > 50) bossHp = 50;
                 
                 if (bossHp <= 0) {
                     bossHp = 0;

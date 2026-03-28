@@ -252,6 +252,8 @@ body {
 .attack-btn {
   background-color: var(--deep-purple);
   border: 1px solid var(--cool-steel);
+color: white;
+
 }
 
 .attack-btn:hover {
