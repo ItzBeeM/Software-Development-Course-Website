@@ -8,13 +8,13 @@
   <body>
     <aside class="sidebar">
       <h2>Software Dev</h2>
-      <ul class="nav-links">
-        <li><a href="index.html">Welcome</a></li>
-        <li><a href="lesson1.html">Lesson 1</a></li>
-        <li><a href="lesson2.html">Lesson 2</a></li>
-        <li><a href="lesson3.html">Lesson 3</a></li>
-        <li><a href="lesson4.html">Lesson 4</a></li>
-        <li><a href="lesson5.html">Lesson 5</a></li>
+      <ul class="nav-links quest-log">
+        <li><a href="index.html">🏰 Quest Board (Intro)</a></li>
+        <li><a href="lesson1.html">📜 Scroll 1 (Languages)</a></li>
+        <li><a href="lesson2.html">🔮 Scroll 2 (IDE)</a></li>
+        <li><a href="lesson3.html">🛡️ Scroll 3 (Git)</a></li>
+        <li><a href="lesson4.html">⚔️ Scroll 4 (The Client)</a></li>
+        <li><a href="lesson5.html">🐉 Final Boss (Methods)</a></li>
       </ul>
     </aside>
 
@@ -37,12 +37,26 @@
         </p>
       </div>
 
-      <div class="card">
-        <p> <img src="images\client.png" alt="Client"></p>
-        <p>
-          Maybe some sort of Boss fight with difficult clients?(quiz, jrpg battle)
-        </p>
-       
+      <div class="card" id="lesson4-interactive">
+        <h3>Boss Fight: The Difficult Client</h3>
+        <div style="text-align: center; margin-bottom: 20px;">
+          <img src="images/client.png" alt="Angry Client Boss" style="max-height: 150px; border-radius: 8px;">
+        </div>
+        
+        <div class="client-boss-container">
+          <p class="boss-dialogue">"I want an app that uses blockchain, AI, and big data to walk my dog. It needs to be ready by tomorrow and my budget is $50. No passwords!"</p>
+          <div class="boss-stats">
+            <span>Client HP Formidability: <span id="boss-hp">100</span>/100</span>
+          </div>
+          
+          <div class="boss-actions">
+            <button class="interactive-btn attack-btn" data-damage="0" data-msg="You said: 'That's impossible, are you crazy?!' The client got angry. He healed 10 HP.">Demand Logic</button>
+            <button class="interactive-btn attack-btn" data-damage="50" data-msg="You said: 'We can build a basic prototype focusing just on the dog walking scheduling for now. How about $5,000 for phase one?'">Offer Alternative Scope</button>
+            <button class="interactive-btn attack-btn" data-damage="-20" data-msg="You said: 'Sure, we will get it done boss!' The client is happy but you have doomed yourself. The client gained power!">Agree Blindly</button>
+          </div>
+        </div>
+        
+        <p id="lesson4-feedback" class="feedback-msg"></p>
       </div>
     </main>
 

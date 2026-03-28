@@ -82,3 +82,259 @@ body {
   border-radius: 8px;
   margin-bottom: 20px;
 }
+
+/* ===== Interactive Elements ===== */
+.interactive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background-color: var(--coffee-bean);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.interactive-table th, .interactive-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--midnight-violet);
+}
+
+.interactive-table th {
+  background-color: var(--deep-purple);
+  color: white;
+}
+
+.language-select {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: var(--cool-steel);
+  color: var(--coffee-bean);
+  border: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.interactive-btn {
+  background-color: var(--celadon);
+  color: var(--coffee-bean);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.interactive-btn:hover {
+  opacity: 0.8;
+}
+
+.feedback-msg {
+  margin-top: 10px;
+  font-weight: bold;
+  min-height: 20px;
+}
+
+.success-text {
+  color: #7ee081;
+}
+
+.error-text {
+  color: #ff6b6b;
+}
+
+.result-icon {
+  width: 30px;
+  text-align: center;
+}
+
+/* ===== Commit Game ===== */
+.game-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.game-stat {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--celadon);
+}
+
+.commit-grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 3px;
+  margin: 15px 0;
+  background-color: var(--coffee-bean);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.commit-square {
+  aspect-ratio: 1;
+  background-color: var(--cool-steel);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+.commit-square:active {
+  transform: scale(0.9);
+}
+
+.commit-square.committed {
+  background-color: var(--celadon);
+  cursor: default;
+}
+
+/* ===== Vim Terminal ===== */
+.vim-terminal {
+  background-color: #000;
+  color: #ccc;
+  font-family: monospace;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px 0;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.vim-input-line {
+  display: flex;
+  margin-top: auto;
+}
+
+.vim-input-line input {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  font-family: monospace;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+
+/* ===== Boss Battle ===== */
+.client-boss-container {
+  background-color: var(--coffee-bean);
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid var(--deep-purple);
+  margin: 15px 0;
+}
+
+.boss-dialogue {
+  font-style: italic;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: var(--midnight-violet);
+  border-left: 4px solid var(--celadon);
+}
+
+.boss-stats {
+  font-weight: bold;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.boss-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attack-btn {
+  background-color: var(--deep-purple);
+  border: 1px solid var(--cool-steel);
+}
+
+.attack-btn:hover {
+  background-color: var(--midnight-violet);
+  border-color: var(--celadon);
+}
+
+/* ===== Level Up Animation ===== */
+.level-up-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  background: radial-gradient(circle, var(--midnight-violet) 0%, var(--coffee-bean) 100%);
+  color: var(--celadon);
+  padding: 40px 60px;
+  border: 4px solid var(--deep-purple);
+  border-radius: 15px;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Times New Roman', serif;
+  text-shadow: 2px 2px 4px #000;
+  box-shadow: 0 0 30px var(--celadon);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.level-up-popup.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* ===== Final Boss - Wizard ===== */
+.wizard-boss-container {
+  background-color: var(--coffee-bean);
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #5d4037;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.wizard-hp-bar {
+  width: 100%;
+  height: 20px;
+  background-color: var(--cool-steel);
+  border-radius: 10px;
+  margin: 10px 0 25px 0;
+  overflow: hidden;
+  border: 1px solid var(--coffee-bean);
+}
+
+.wizard-hp-fill {
+  height: 100%;
+  background-color: #ff6b6b;
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+.wizard-question {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: var(--celadon);
+}
+
+.wizard-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wizard-option-btn {
+  background-color: var(--midnight-violet);
+  color: var(--cool-steel);
+  border: 1px solid var(--deep-purple);
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.wizard-option-btn:hover {
+  background-color: var(--deep-purple);
+  color: white;
+}
