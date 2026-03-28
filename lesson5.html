@@ -8,13 +8,13 @@
   <body>
     <aside class="sidebar">
       <h2>Software Dev</h2>
-      <ul class="nav-links">
-        <li><a href="index.html">Welcome</a></li>
-        <li><a href="lesson1.html">Lesson 1</a></li>
-        <li><a href="lesson2.html">Lesson 2</a></li>
-        <li><a href="lesson3.html">Lesson 3</a></li>
-        <li><a href="lesson4.html">Lesson 4</a></li>
-        <li><a href="lesson5.html">Lesson 5</a></li>
+      <ul class="nav-links quest-log">
+        <li><a href="index.html">🏰 Quest Board (Intro)</a></li>
+        <li><a href="lesson1.html">📜 Scroll 1 (Languages)</a></li>
+        <li><a href="lesson2.html">🔮 Scroll 2 (IDE)</a></li>
+        <li><a href="lesson3.html">🛡️ Scroll 3 (Git)</a></li>
+        <li><a href="lesson4.html">⚔️ Scroll 4 (The Client)</a></li>
+        <li><a href="lesson5.html">🐉 Final Boss (Methods)</a></li>
       </ul>
     </aside>
 
@@ -81,8 +81,24 @@
         </p>
       </div>
 
-      <p>Interactive element idea: Match language to its most common use case(completing a table)</p>
-      <p>Interactive element idea: Create a Git commit mini game, clicking as many squares as possible within a time limit, mimicing the daily commits grindset or smth.</p>
+      <div class="card" id="lesson5-interactive">
+        <h3>Final Boss: The Legacy Wizard</h3>
+        <p>A crusty old wizard blocks your path to graduation! He casts "Waterfall Illusion"! You must answer his riddles correctly to break his spell and defeat him.</p>
+        
+        <div class="wizard-boss-container">
+          <div class="wizard-hp-bar">
+            <div class="wizard-hp-fill" id="wizard-hp-fill" style="width: 100%;"></div>
+          </div>
+          
+          <div id="wizard-question-container">
+            <p class="wizard-question" id="wizard-question-text">Question goes here</p>
+            <div class="wizard-options" id="wizard-options-container">
+              <!-- Buttons injected by JS -->
+            </div>
+          </div>
+          <p id="lesson5-feedback" class="feedback-msg" style="margin-top: 15px;"></p>
+        </div>
+      </div>
     </main>
 
     <script src="js/script.js"></script>

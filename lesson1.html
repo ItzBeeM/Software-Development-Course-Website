@@ -8,13 +8,13 @@
   <body>
     <aside class="sidebar">
       <h2>Software Dev</h2>
-      <ul class="nav-links">
-        <li><a href="index.html">Welcome</a></li>
-        <li><a href="lesson1.html">Lesson 1</a></li>
-        <li><a href="lesson2.html">Lesson 2</a></li>
-        <li><a href="lesson3.html">Lesson 3</a></li>
-        <li><a href="lesson4.html">Lesson 4</a></li>
-        <li><a href="lesson5.html">Lesson 5</a></li>
+      <ul class="nav-links quest-log">
+        <li><a href="index.html">🏰 Quest Board (Intro)</a></li>
+        <li><a href="lesson1.html">📜 Scroll 1 (Languages)</a></li>
+        <li><a href="lesson2.html">🔮 Scroll 2 (IDE)</a></li>
+        <li><a href="lesson3.html">🛡️ Scroll 3 (Git)</a></li>
+        <li><a href="lesson4.html">⚔️ Scroll 4 (The Client)</a></li>
+        <li><a href="lesson5.html">🐉 Final Boss (Methods)</a></li>
       </ul>
     </aside>
 
@@ -35,8 +35,61 @@
         </p>
       </div>
 
-      <div class="card">
-         <img src="images\progLang.avif">
+      <div class="card" id="lesson1-interactive">
+        <h3>Interactive: Match Language to Use Case</h3>
+        <p>Select the most appropriate programming language for each use case from the dropdowns.</p>
+        <table class="interactive-table">
+          <thead>
+            <tr>
+              <th>Use Case</th>
+              <th>Language</th>
+              <th class="result-icon"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Development (Frontend UI)</td>
+              <td>
+                <select data-correct="JavaScript" class="language-select">
+                  <option value="">--Select--</option>
+                  <option value="Python">Python</option>
+                  <option value="C">C</option>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="SQL">SQL</option>
+                </select>
+              </td>
+              <td class="status-cell"></td>
+            </tr>
+            <tr>
+              <td>Data Analysis & Machine Learning</td>
+              <td>
+                <select data-correct="Python" class="language-select">
+                  <option value="">--Select--</option>
+                  <option value="Python">Python</option>
+                  <option value="C">C</option>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="SQL">SQL</option>
+                </select>
+              </td>
+              <td class="status-cell"></td>
+            </tr>
+            <tr>
+              <td>Operating Systems & Embedded Systems</td>
+              <td>
+                <select data-correct="C" class="language-select">
+                  <option value="">--Select--</option>
+                  <option value="Python">Python</option>
+                  <option value="C">C</option>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="SQL">SQL</option>
+                </select>
+              </td>
+              <td class="status-cell"></td>
+            </tr>
+          </tbody>
+        </table>
+        <button id="check-answers-btn" class="interactive-btn">Check Answers</button>
+        <p id="lesson1-feedback" class="feedback-msg"></p>
       </div>
     </main>
 

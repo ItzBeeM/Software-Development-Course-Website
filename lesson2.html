@@ -8,13 +8,13 @@
   <body>
     <aside class="sidebar">
       <h2>Software Dev</h2>
-      <ul class="nav-links">
-        <li><a href="index.html">Welcome</a></li>
-        <li><a href="lesson1.html">Lesson 1</a></li>
-        <li><a href="lesson2.html">Lesson 2</a></li>
-        <li><a href="lesson3.html">Lesson 3</a></li>
-        <li><a href="lesson4.html">Lesson 4</a></li>
-        <li><a href="lesson5.html">Lesson 5</a></li>
+      <ul class="nav-links quest-log">
+        <li><a href="index.html">🏰 Quest Board (Intro)</a></li>
+        <li><a href="lesson1.html">📜 Scroll 1 (Languages)</a></li>
+        <li><a href="lesson2.html">🔮 Scroll 2 (IDE)</a></li>
+        <li><a href="lesson3.html">🛡️ Scroll 3 (Git)</a></li>
+        <li><a href="lesson4.html">⚔️ Scroll 4 (The Client)</a></li>
+        <li><a href="lesson5.html">🐉 Final Boss (Methods)</a></li>
       </ul>
     </aside>
 
@@ -41,7 +41,20 @@
           <img src="images\ide.jpg">
         </p>
 
-    
+      <div class="card" id="lesson2-interactive">
+        <h3>Interactive: Escape Vim!</h3>
+        <p>You accidentally opened Vim. It's a rite of passage. Now... how do you get out?</p>
+        <div class="vim-terminal">
+          <div>~</div>
+          <div>~</div>
+          <div>~</div>
+          <div class="vim-input-line">
+            <input type="text" id="vim-input" autocomplete="off" placeholder="type command...">
+          </div>
+        </div>
+        <button id="vim-submit-btn" class="interactive-btn">Execute</button>
+        <p id="lesson2-feedback" class="feedback-msg"></p>
+      </div>
     </main>
 
     <script src="js/script.js"></script>
