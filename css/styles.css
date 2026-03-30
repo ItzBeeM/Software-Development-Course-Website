@@ -22,6 +22,11 @@ body {
   background-color: var(--coffee-bean);
   color: var(--cool-steel);
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* ===== Sidebar ===== */
 .sidebar {
